@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Daymark — Daily Activity System</title>
+    <meta name="description" content="Unified daily activity engine combining tasks, habits, routines, and time tracking into a cohesive daily workflow." />
+    <meta property="og:title" content="Daymark — Daily Activity System" />
+    <meta property="og:description" content="Unified daily activity engine combining tasks, habits, routines, and time tracking into a cohesive daily workflow." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#10b981" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+  </head>
+  <body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      if (window.location.protocol === 'file:') {
+        window.addEventListener('DOMContentLoaded', () => {
+          const banner = document.createElement('div');
+          banner.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(15,23,42,0.95);color:#fff;padding:30px;font-family:system-ui,-apple-system,sans-serif;z-index:999999;display:flex;align-items:center;justify-content:center;text-align:center;backdrop-filter:blur(8px);';
+          banner.innerHTML = '<div style="max-width:540px;background:#1e293b;border:1px solid #334155;border-radius:24px;padding:32px;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);">' +
+            '<div style="font-size:40px;margin-bottom:12px;">🌐</div>' +
+            '<h2 style="margin:0 0 10px;font-size:22px;font-weight:800;color:#f8fafc;">Local HTTP Server Required</h2>' +
+            '<p style="margin:0 0 16px;font-size:14px;color:#94a3b8;line-height:1.6;">Modern React applications cannot run directly from <code>file:///</code> due to browser security restrictions on JavaScript modules.</p>' +
+            '<div style="background:#0f172a;border-radius:16px;padding:16px;text-align:left;font-size:13px;color:#cbd5e1;line-height:1.7;margin-bottom:20px;border:1px solid #1e293b;">' +
+            '<strong style="color:#38bdf8;">To view or test this app:</strong><br>' +
+            '• <strong>Upload to hosting:</strong> Upload to <a href="https://app.netlify.com/drop" target="_blank" style="color:#6ee7b7;text-decoration:underline;">Netlify Drop</a>, Vercel, or cPanel.<br>' +
+            '• <strong>Local test:</strong> Double-click <code>preview-local.bat</code> or run <code>npx serve</code> in this directory.' +
+            '</div>' +
+            '<p style="margin:0;font-size:12px;color:#64748b;">Once uploaded to web hosting, the app will run with full functionality.</p>' +
+            '</div>';
+          document.body.appendChild(banner);
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="45%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- App Icon Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <!-- Subtle Compass Dial Ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#a7f3d0" stroke-width="2.5" stroke-dasharray="8 8" opacity="0.45" />
+  <circle cx="256" cy="256" r="120" fill="url(#glow)" />
+  <!-- Compass Star Needle -->
+  <!-- North (White) -->
+  <polygon points="256,96 244,244 256,256" fill="#ffffff" />
+  <polygon points="256,96 268,244 256,256" fill="#e2e8f0" />
+  <!-- South (Teal Green) -->
+  <polygon points="256,416 268,268 256,256" fill="#047857" />
+  <polygon points="256,416 244,268 256,256" fill="#059669" />
+  <!-- East (Mint) -->
+  <polygon points="416,256 268,244 256,256" fill="#6ee7b7" />
+  <polygon points="416,256 268,268 256,256" fill="#34d399" />
+  <!-- West (Mint) -->
+  <polygon points="96,256 244,268 256,256" fill="#10b981" />
+  <polygon points="96,256 244,244 256,256" fill="#34d399" />
+  <!-- Center Core Ring & Bullseye -->
+  <circle cx="256" cy="256" r="32" fill="#ffffff" />
+  <circle cx="256" cy="256" r="20" fill="#047857" />
+  <circle cx="256" cy="256" r="8" fill="#ffffff" />
+</svg>

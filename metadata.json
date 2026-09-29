@@ -1,0 +1,6 @@
+{
+  "name": "Daymark — Daily Activity System",
+  "description": "Unified daily activity engine combining tasks, habits, routines, and time tracking into a cohesive daily workflow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
